@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+/* Css variables */
+:root{
+    /* --pfolio-d:20vw; */
+    --navbar-height:10vh;
+    --nav-content-height:90vh;
+}
+header{
+    background-image: url('/portfolio/images/portfolio.png') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  background-size: cover;
+  background-size: 100% 100%;
+
+}
+
+.container{
+    /* width: 100%; */
+    /* background-color: rgb(117, 199, 241); */
+    display: flex;
+    /* height: 100vh; */
+    /* width: 90%; */
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+}
+
+
+
+
+.navbar{
+    /* background-color: aliceblue; */
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    height: var(--navbar-height);
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(223, 133, 133); */
+    align-items: center;
+    padding: 0px 0px;
+    /* margin-bottom: 10px; */
+
+}
+.nav{
+    padding: 0px 20px;
+
+}
+.navbar ul{
+    display: flex;
+    /* width: 90%; */
+    justify-content: space-between;
+    /* align-items: center; */
+}.navbar li{
+    list-style: none;padding: 0px 20px;
+}
+.navbar ul li a{ 
+    text-decoration: none;
+    color: black;
+
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+    color: rgb(139, 108, 151);
+}
+
+a:active{
+    color: rgb(144, 49, 226);
+    /* background-color: #fff; */
+}
+#about{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Rampart One', cursive;
+font-family: 'Shantell Sans', cursive;
+    height: var(--nav-content-height);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* margin: 0px var(--pfolio-d); */
+    align-items:start;
+    font-size: 25px;
+    
+    padding:0px 100px;
+}
+.hi{
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.name{
+    color: rgb(163, 42, 204);
+    font-size: 35px;
+}
+#contact{
+    height: var(--nav-content-height);
+    display: flex;
+    justify-content:center;
+    /* margin: 0px var(--pfolio-d); */
+    align-items: center;
+    
+    font-size: 30px;
+    font-style: italic;
+}
+#education{
+    height: var(--nav-content-height);
+font-family: 'PT Serif', serif;
+    display: flex;
+
+    flex-direction: column;
+    text-align: left;
+    padding-left: 35%;
+    justify-content:center;
+    /* margin: 0px var(--pfolio-d); */
+    /* align-items: center; */
+    font-size: 28px;
+    
+}
+.nav-content{
+    color: black ;
+    text-decoration: solid;
+}
