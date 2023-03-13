@@ -33,7 +33,7 @@
 }
 
 header{
-    background-image: url('/portfolio/images/portfolio.png') ;
+    background-image: url('/images/portfolio.png') ;
     background-repeat: no-repeat;
     background-attachment: fixed; 
   background-size: cover;
