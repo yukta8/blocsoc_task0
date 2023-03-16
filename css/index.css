@@ -1,136 +1,116 @@
 /* Css reset */
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-
-/* html{
-    scroll-behavior: smooth;
-} */
 
 /* Css variables */
-:root{
-    /* --pfolio-d:20vw; */
-    --navbar-height:10vh;
-    --nav-content-height:90vh;
+:root {
+  /* --pfolio-d:20vw; */
+  --navbar-height: 10vh;
+  --nav-content-height: 90vh;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
 
-
-
-.container{
-    /* width: 100%; */
-    /* background-color: rgb(118, 204, 241); */
-    display: flex;
-    flex-wrap: wrap;
-    /* height: 100vh; */
-    /* width: 90%; */
-    /* background-color: red; */
-    justify-content: center;
-    align-items: center;
-    /* margin: 20px; */
+  justify-content: center;
+  align-items: center;
 }
 
-header{
-    background-image: url('/images/portfolio.png') ;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+header {
+  background-image: url("/images/portfolio.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-size: 100% 100%;
-
 }
 
+.navbar {
+  /* background-color: aliceblue; */
+  font-family: "Dosis", sans-serif;
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+  font-size: 20px;
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: space-between;
 
-.navbar{
-    /* background-color: aliceblue; */
-    font-family: 'Dosis', sans-serif;
-    position: sticky;
-    top: 0px;
-    width: 100vw;
-    font-size: 20px;
-    height: var(--navbar-height);
-    display: flex;
-    justify-content: space-between;
-    /* background-color: rgb(223, 133, 133); */
-    align-items: center;
-    padding: 0px 0px;
-    /* margin-bottom: 10px; */
+  align-items: center;
+  padding: 0px 0px;
+}
+.nav {
+  font-family: "Dosis", sans-serif;
+  padding: 0px 20px;
+}
+.navbar ul {
+  display: flex;
 
+  justify-content: space-between;
 }
-.nav{
-    font-family: 'Dosis', sans-serif;
-    padding: 0px 20px;
-
+.navbar li {
+  list-style: none;
+  padding: 0px 20px;
 }
-.navbar ul{
-    display: flex;
-    /* width: 90%; */
-    justify-content: space-between;
-    /* align-items: center; */
-}.navbar li{
-    list-style: none;padding: 0px 20px;
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
 }
-.navbar ul li a{ 
-    text-decoration: none;
-    color: black;
-
-}
-.navbar ul li a:hover{
-    text-decoration: underline;
+.navbar ul li a:hover {
+  text-decoration: underline;
 }
 
-a:visited{
-    color: rgb(114, 70, 152);
-    /* background-color: #fff; */
+a:visited {
+  color: rgb(114, 70, 152);
+  /* background-color: #fff; */
 }
-#pfolio{
-    font-family: 'Poppins', sans-serif;
-font-family: 'Rampart One', cursive;
-    height: var(--nav-content-height);
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    /* margin: 0px var(--pfolio-d); */
-    align-items: center;
-    font-size: 30px;
-    /* font-style: italic; */
+#pfolio {
+  font-family: "Poppins", sans-serif;
+  font-family: "Rampart One", cursive;
+  height: var(--nav-content-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    position: relative;
-    animation: pfolio 4s ease-in infinite normal none;
+  align-items: center;
+  font-size: 30px;
+  /* font-style: italic; */
+
+  position: relative;
+  animation: pfolio 4s ease-in infinite normal none;
 }
 
 @keyframes pfolio {
-    
-    0%{
-        top: -50px;
-        left: 0px;
-        color: rgb(219, 119, 211);
-    }
-    25%{
-        top: 0px;
-        left: -50px;
-        color: rgb(76, 72, 72);
-    }
-    50%{
-        top: 50px;
-        left: 0px;
-        color: rgb(219, 119, 211);
-    }
-    75%{
-        top: 0px;
-        left: 50px;
-        color: rgb(76, 72, 72);
-    }
-    100%{
-        top: -50px;
-        left: 0px;
-        color: rgb(219, 119, 211);
-    }
-    
-    
+  0% {
+    top: -50px;
+    left: 0px;
+    color: rgb(219, 119, 211);
+  }
+  25% {
+    top: 0px;
+    left: -50px;
+    color: rgb(76, 72, 72);
+  }
+  50% {
+    top: 50px;
+    left: 0px;
+    color: rgb(219, 119, 211);
+  }
+  75% {
+    top: 0px;
+    left: 50px;
+    color: rgb(76, 72, 72);
+  }
+  100% {
+    top: -50px;
+    left: 0px;
+    color: rgb(219, 119, 211);
+  }
 }
 
-.nav-content{
-    color: white;
+.nav-content {
+  color: white;
 }
